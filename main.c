@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  unsigned char motors; // max 255 motors
+  int motors;
   float kg_package;
 
   // Input motors
@@ -20,7 +20,7 @@ int main() {
         motors, kg_package);
   } else {
     printf("Yes, the %d motors will carry the %.2f kg packages! :D\n", motors,
-           kg_packages);
+           kg_package);
   }
 
   return 0;
